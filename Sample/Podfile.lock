@@ -7,7 +7,7 @@ PODS:
     - Moya-ObjectMapper/Core (= 2.8)
   - Moya-ObjectMapper/Core (2.8):
     - Moya (~> 13.0.1)
-    - ObjectMapper (~> 3.4)
+    - ObjectMapper (~> 3.0)
   - Moya-ObjectMapper/RxSwift (2.8):
     - Moya-ObjectMapper/Core
     - RxSwift (~> 5.0.0)
@@ -60,7 +60,7 @@ SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Moya-ObjectMapper: 7381d9e939663aba91a8a2ce6700c2df21c06e4e
+  Moya-ObjectMapper: 7453c5e4e67068e97dc1241847e4132cf94ee24e
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAlertController: ef75925a2a002f0f1fd03378ddeceaa9c1c5558f
