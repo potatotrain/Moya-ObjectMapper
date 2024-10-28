@@ -1,43 +1,60 @@
 PODS:
-  - Alamofire (4.9.0)
-  - Differentiator (4.0.1)
-  - Moya (13.0.1):
-    - Moya/Core (= 13.0.1)
-  - Moya-ObjectMapper (2.8):
-    - Moya-ObjectMapper/Core (= 2.8)
-  - Moya-ObjectMapper/Core (2.8):
-    - Moya (~> 13.0.1)
-    - ObjectMapper (~> 3.0)
-  - Moya-ObjectMapper/RxSwift (2.8):
+  - Alamofire (5.5.0)
+  - Differentiator (5.0.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya-ObjectMapper (2.9):
+    - Moya-ObjectMapper/Core (= 2.9)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya
+    - ObjectMapper
+  - Moya-ObjectMapper/ReactiveSwift (2.9):
     - Moya-ObjectMapper/Core
-    - RxSwift (~> 5.0.0)
-  - Moya/Core (13.0.1):
-    - Alamofire (~> 4.1)
-    - Result (~> 4.1)
-  - ObjectMapper (3.5.1)
-  - Result (4.1.0)
-  - RxAlertController (5.0.0):
-    - RxSwift (~> 5.0)
-  - RxCocoa (5.0.0):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxDataSources (4.0.1):
-    - Differentiator (~> 4.0)
-    - RxCocoa (~> 5.0)
-    - RxSwift (~> 5.0)
-  - RxRelay (5.0.0):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+    - Moya/ReactiveSwift
+    - ReactiveSwift
+  - Moya-ObjectMapper/RxSwift (2.9):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/ReactiveSwift (15.0.0):
+    - Moya/Core
+    - ReactiveSwift (~> 6.6.1)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - ObjectMapper (4.2.0)
+  - ReactiveCocoa (11.2.2):
+    - ReactiveSwift (~> 6.6)
+  - ReactiveSwift (6.6.1)
+  - RxAlertController (6.0.1):
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
 
 DEPENDENCIES:
-  - Moya (~> 13.0.1)
+  - Moya
   - Moya-ObjectMapper (from `../`)
+  - Moya-ObjectMapper/ReactiveSwift (from `../`)
   - Moya-ObjectMapper/RxSwift (from `../`)
-  - ObjectMapper (~> 3.5)
-  - RxAlertController (~> 5.0.0)
-  - RxCocoa (~> 5.0.0)
-  - RxDataSources (~> 4.0.0)
-  - RxSwift (~> 5.0.0)
+  - Moya/ReactiveSwift
+  - Moya/RxSwift
+  - ObjectMapper
+  - ReactiveCocoa
+  - ReactiveSwift
+  - RxAlertController
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -45,7 +62,8 @@ SPEC REPOS:
     - Differentiator
     - Moya
     - ObjectMapper
-    - Result
+    - ReactiveCocoa
+    - ReactiveSwift
     - RxAlertController
     - RxCocoa
     - RxDataSources
@@ -57,18 +75,19 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
-  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
-  Moya-ObjectMapper: 7453c5e4e67068e97dc1241847e4132cf94ee24e
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
-  RxAlertController: ef75925a2a002f0f1fd03378ddeceaa9c1c5558f
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Moya-ObjectMapper: 5909e3ec892dc917dbbe4ffbfb444d4c1825062f
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ReactiveCocoa: e539cd41c523c8c80851b88e9723235c933b024b
+  ReactiveSwift: fab34244ad908808dc822bae352a058c8837c4ca
+  RxAlertController: d47c016a597ce9f461044f307c34959b07c9e9ce
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 7bb65d9edc2370b68365ecef6b70d5b9b7a70cd6
+PODFILE CHECKSUM: a54ee9026cab0878d85c2ed1207e4e7c44ad070e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.2
